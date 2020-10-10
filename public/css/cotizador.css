@@ -1,0 +1,341 @@
+    .accordionn {
+      background-color: #eee;
+      cursor: pointer;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+      margin: 0px auto 12px;
+    }
+
+    .active, .accordion:hover {
+      background-color: lightblue; 
+    }
+
+    .panelito {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    .azulWhi{
+        background: rgb(0, 45, 98);
+        color: white;
+    }  
+    .table{
+
+        table-layout: fixed;
+    }
+
+    .flash {
+        font-size: 1em;
+        animation-name: flash;
+        animation-duration: 1.2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-play-state: running;
+    }
+
+    @keyframes flash {
+        from {color: red;}
+        to {color: black}
+    }
+
+    #papeles.cotizador_box {    /* ventana de selección de papel */
+
+        width: 950px;
+    }
+
+    .cotizador_box p {
+
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .cotizador_box label {
+
+        color: #53bfe2;
+        font-size: 13px;
+        vertical-align: top;
+        cursor: pointer;
+    }
+
+    .cotizador_box label:hover {
+
+        text-decoration: underline;
+    }
+
+    .chk {
+
+        margin: 0 3px;
+    }
+
+    .btn-c-blues {
+
+        background: #1A2C4C;
+        color: white;
+        border:none;
+        cursor: pointer;
+    }
+
+    .btn-c-blues:hover {
+
+        background-color: #5B84B1;
+        color: white;
+    }
+
+    .btn-guardar-blues {
+
+        background: #1A2C4C;
+        width: 100px;
+        color: white;
+        border:none;
+        cursor: pointer;
+    }
+
+    .btn-guardar-blues:hover {
+
+        background-color: #5B84B1;
+        color: white;
+    }
+
+    .wrap {
+        margin: auto;
+        text-align: center;
+    }
+
+    .panel {
+        background-color: lightsteelblue;
+        padding: 10px 0;
+        border-radius: 5px;
+    }
+
+    .panel:hover {
+        background-color: #5B84B1;
+        color: white;
+    }
+
+    .divgral {
+        margin: 4px;
+    }
+
+    .divgral:hover{
+        background-color: #F8F8F8;
+    }
+
+    /* grid ofensivo */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 25%);
+
+    }
+
+    .cursorMan {
+
+        cursor: pointer;
+    }
+
+    .cursorMan span {
+        font-family: Arial, sans-serif, 'Trebuchet MS';
+        font-size: 22px;        
+        color: black;
+    }
+
+    .cursorMan span:hover {
+        color: blue;
+        text-decoration: underline;
+    }
+
+    .divimpresiones {
+        text-align: center;
+    }
+
+    .SelectTSM {
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        background-color: whitesmoke;
+        border: none;
+        border-radius: 12px;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .grid {
+            display: unset;
+        }
+        .left {
+            width: 100%;
+            margin-left: 0%;
+        }
+
+        .right {
+            width: 100%;
+        }
+
+        .div-izquierdo {
+            width: 100%;
+            display: contents;
+            height: 100%
+        }
+
+        .div-derecho {
+            width: 100%;
+            display: inline-block;
+            height: 100%
+        }
+
+        .selectormodelo {
+            width: 100%;
+        }
+
+        .NmCliente {
+            display: none;
+        }
+    }
+
+    @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+      .grid {
+            display: unset;
+        }
+        .left {
+            width: 100%;
+            margin-left: 0%;
+        }
+
+        .right {
+            width: 100%;
+        }
+
+        .div-izquierdo {
+            width: 100%;
+            display: contents;
+            height: 100%
+        }
+
+        .div-derecho {
+            width: 100%;
+            display: inline-block;
+            height: 100%
+        }
+
+        .selectormodelo {
+            width: 100%;
+        }
+
+        .NmCliente {
+            display: none;
+        }
+    }
+
+    .CellWithComment{
+      position:relative;
+    }
+
+    .CellComment{
+        border-radius: 8px;
+        width: 260px;
+        display: none;
+        position: absolute;
+        background-color: mintcream;
+        border-style: groove;
+        border-width: 2px;
+        padding: 3px;
+        left: -50px;
+    }
+
+    .CellWithComment:hover span.CellComment{
+        display:block;
+    }
+
+    .imagenhistorias{
+        border-radius: 4px;
+        overflow: hidden;
+        border: solid 1px #ccc;
+    }
+
+
+    *{box-sizing:border-box;}
+
+        .social{
+            /*las imágenes usadas tienen width de 48px*/
+            /*width:48px;*/
+            position:fixed;
+            top:50px;
+            right:0;
+        }
+
+        /* Extra centrado vertical*/
+
+        .social{
+            /*border:1px solid #000;*/
+            top:85%;
+            /*height:205px;*/
+            /*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
+            /*margin-top:-100px;*/
+        }
+
+    #form_modelo_0 img {
+        margin-top: 25px;
+        font-size: 21px;
+        text-align: center;
+        animation: fadein 3s;
+        -moz-animation: fadein 2s; /* Firefox */
+        -webkit-animation: fadein 3s; /* Safari and Chrome */
+        -o-animation: fadein 2s; /* Opera */
+    }
+    @-webkit-keyframes fadein { /* Safari and Chrome */
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+
+.div-derecho{
+    float: right;
+    width: 80%;
+    padding: 3px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.div-izquierdo{
+    position: absolute;
+    display: block;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 20%;
+}
+
+
+.div-izquierdo::-webkit-scrollbar {
+    width: 0.3em;
+}
+ 
+.div-izquierdo::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.div-izquierdo::-webkit-scrollbar-thumb {
+  background-color: grey;
+  outline: 1px solid cornflowerblue;
+}
+
+.div-derecho::-webkit-scrollbar {
+    width: 0.3em;
+}
+ 
+.div-derecho::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.div-derecho::-webkit-scrollbar-thumb {
+  background-color: grey;
+  outline: 1px solid cornflowerblue;
+}
